@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+body {
+    background-color: #141413;
+}
+
+/*******************************
+*******Header
+*********************************/
+header {
+    position: relative;
+}
+.main-image img {
+    width: 100%;
+}
+header nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+header .logo img {
+    width: 7rem;
+    padding: 1rem 2rem;
+}
+header .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+header .right-nav .search {
+    position: relative;
+}
+header .right-nav .search input {
+    padding: 0.7rem 2.5rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.7rem;
+}
+header .right-nav .search img {
+    position: absolute;
+    right: 0.7rem;
+    top: 0.2rem;
+    width: 2.5rem;
+}
+header .watch-now {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 30%;
+    color: #fff;
+}
+header .watch-now .trailer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+header .watch-now .trailer img {
+    width: 10rem;
+}
+/*******************************
+*******Main
+*********************************/
+main {
+    background-color: #141413;
+}
+
+/*  feature is in the action page  */
+main .heading,
+.feature .heading {
+    padding: 2rem 3rem;
+    color: #fff;
+}
+main .movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 2rem 2rem;
+    gap: 1rem;
+}
+main .movie-container .movie {
+    position: relative;
+}
+main .movie-container .movie .image {
+    width: 100%;
+}
+main .movie-container .movie .image img {
+    width: 100%;
+    height: 400px;
+}
+main .movie-container .movie .like {
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    width:40px;
+    height: 30px;
+}
+main .movie-container .movie .like img , .feature .coming-soon .movie .like img{
+   
+    width: 30px;
+     height: 30px;
+    padding: 0.3rem;
+    padding-right:0;
+}
+main .movie-container .movie .name {
+    color: #fff;
+}
+main .movie-container .movie .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+main .movie-container .movie .info .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+}
+.watch-now {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 30%;
+    color: #fff;
+}
+.watch-now img {
+    width: 150px;
+
+    float: left;
+}
+.watch-now p {
+    position: relative;
+    float: right;
+    top: -2px;
+    left: 20px;
+    color: #141413;
+}
+.watch-now .movie-text {
+    position: relative;
+    float: left;
+    left: 0px;
+}
+.rating p {
+    color: rgb(237, 243, 238);
+    position: relative;
+    float: right;
+    top: 10px;
+}
+.line {
+    width: 50%;
+    align-items: center;
+    position: relative;
+    border: 1px solid #423d39;
+    margin: 0 auto;
+    margin-bottom: -11%;
+}
+.coming-soon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 2rem 2rem;
+    gap: 1rem;
+    background-color: #141413;
+}
+.coming-soon .movie {
+    position: relative;
+}
+.coming-soon .movie .image {
+    width: 100%;
+}
+.coming-soon .movie .image img {
+    width: 100%;
+}
+.coming-soon .movie .like {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.coming-soon .movie .like img {
+    padding: 2px;
+}
+.coming-soon .movie .info {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: inline-flex;
+}
+.coming-soon .movie .info .name {
+    display: flex;
+    gap: 15px;
+}
+footer .logo {
+    border-top: 2px solid #423d39;
+
+    width: 95%;
+    align-items: center;
+    margin-left: 30px;
+    padding: 5px;
+}
+/* Action page */
+.feature .heading {
+    padding-top: 15%;
+}
+/* Favorites page */
+.favorites {
+    padding-top: 10%;
+}
+.feature .no_favourite {
+    color: rgb(236, 231, 231);
+    /* border: 1px solid red; */
+    left: 30px;
+    position: relative;
+}
+.movie .name {
+    color: #fff;
+}
+.search .feature .movie .image img {
+    width: 200px;
+    height: 300px;
+}
